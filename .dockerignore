@@ -1,0 +1,41 @@
+# Build output (the image builds its own)
+target/
+build/
+out/
+*.class
+*.jar
+*.war
+*.log
+hs_err_pid*
+
+# Maven wrapper download cache - keep .mvn/ and mvnw if you use the wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# VCS
+.git/
+.gitignore
+.gitattributes
+
+# IDEs / OS
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+.DS_Store
+Thumbs.db
+
+# Docker / deployment files are not needed inside the build context
+Dockerfile*
+.dockerignore
+docker-compose*.yml
+nginx.conf
+
+# Docs and secrets
+README.md
+HELP.md
+.env
+.env.*
+*.pem
+*.key
