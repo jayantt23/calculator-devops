@@ -109,7 +109,7 @@ pipeline {
                     # Idempotent: pull the new tag, then 'up -d' only recreates containers whose
                     # image/config changed. Re-running the same build is a no-op.
                     docker compose pull
-                    docker compose up -d --remove-orphans
+                    docker compose up -d --build --remove-orphans
 
                     echo "Waiting for calculator-app to become healthy..."
                     status="unknown"
