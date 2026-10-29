@@ -30,7 +30,6 @@ Thumbs.db
 Dockerfile*
 .dockerignore
 docker-compose*.yml
-nginx.conf
 
 # Docs and secrets
 README.md
