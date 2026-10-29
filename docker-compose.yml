@@ -11,7 +11,7 @@ services:
       SERVER_PORT: "8080"
       JAVA_OPTS: ${JAVA_OPTS:--XX:MaxRAMPercentage=75.0 -XX:+ExitOnOutOfMemoryError -XX:+UseG1GC}
     expose:
-      - "8080"          # reachable only inside the network; Nginx is the public entry point
+      - "8080"          # reachable only inside the network; Ngin x is the public entry point
     healthcheck:
       test: ["CMD-SHELL", "wget -q --spider http://127.0.0.1:8080/actuator/health || exit 1"]
       interval: 15s

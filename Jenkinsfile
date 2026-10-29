@@ -19,10 +19,10 @@ pipeline {
     }
 
     environment {
-        DOCKER_REPO          = 'your-dockerhub-username/calculator-api'   // <-- change me
+        DOCKER_REPO          = 'jayantt523/calculator-api'   // <-- change me
         IMAGE_TAG            = "${BUILD_NUMBER}"
         IMAGE                = "${DOCKER_REPO}:${BUILD_NUMBER}"
-        NOTIFY_EMAIL         = 'devops@example.com'                        // <-- change me
+        NOTIFY_EMAIL         = 'jayantsharma1864@gmail.com'                        // <-- change me
         COMPOSE_PROJECT_NAME = 'calculator'                                // stable project => idempotent redeploys
         DOCKER_BUILDKIT      = '1'                                         // Dockerfile uses cache mounts
     }
